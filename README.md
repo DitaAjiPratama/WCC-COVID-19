@@ -12,7 +12,7 @@ UI / UX : [] Revli
 
 Maps Polygon : [17412040] Dodi Alexsander M
 
-Pie Chart : [] Vijar
+Pie Chart : [18412031] Vijar
 
 Other Contributor : [] Eby
 
