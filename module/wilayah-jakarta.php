@@ -44,6 +44,17 @@ setTimeout(function initMap() {
       if (positif == 0 && last_update != "0000-00-00 00:00:00") color = "green";
       if (positif > 0) color = "red";
     }
+    if (feature.getProperty('table')=="kabupaten") {
+      var provinsi = feature.getProperty('provinsi');
+      var kabupaten = feature.getProperty('kabupaten');
+      var positif = feature.getProperty('positif');
+      var sembuh = feature.getProperty('sembuh');
+      var meninggal = feature.getProperty('meninggal');
+      var last_update = feature.getProperty('last_update');
+      var color = "white";
+      if (positif == 0 && last_update != "0000-00-00 00:00:00") color = "green";
+      if (positif > 0) color = "red";
+    }
     if (feature.getProperty('table') == "kelurahan") {
       var provinsi = feature.getProperty('provinsi');
       var kelurahan = feature.getProperty('kelurahan');
@@ -71,6 +82,37 @@ setTimeout(function initMap() {
 
         "<p class='text-dark'>" +
         "Provinsi: " + event.feature.getProperty('provinsi') +
+        "</p>" +
+
+        "<p class='text-danger'>" +
+        "Positif: " + event.feature.getProperty('positif') +
+        "</p>" +
+
+        "<p class='text-success'>" +
+        "Sembuh: " + event.feature.getProperty('sembuh') +
+        "</p>" +
+
+        "<p class='text-dark'><b>" +
+        "Meninggal: " + event.feature.getProperty('meninggal') +
+        "</b></p>" +
+
+        "<p class='text-dark'>" +
+        "Last Update: " + event.feature.getProperty('last_update') +
+        "</p>" +
+
+        "<a target='_blank' href='" + event.feature.getProperty('source') + "'>Source</a>" +
+
+      "";
+    }
+    if (event.feature.getProperty('table')=="kabupaten") {
+      info = "" +
+
+        "<p class='text-dark'>" +
+        "Provinsi: " + event.feature.getProperty('provinsi') +
+        "</p>" +
+
+        "<p class='text-dark'>" +
+        "Kabupaten / Kota: " + event.feature.getProperty('kabupaten') +
         "</p>" +
 
         "<p class='text-danger'>" +
