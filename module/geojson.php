@@ -54,7 +54,7 @@
         FROM kabupaten INNER JOIN provinsi
         ON kabupaten.provinsi = provinsi.id
         WHERE kabupaten.polygon != ''
-        AND provinsi.nama = 'banten'
+        AND provinsi.nama = 'Banten'
       ";
       $result = $con->query($sql);
       while ($row = $result->fetch_assoc()) { $i++; if ($i>1) echo ",";
