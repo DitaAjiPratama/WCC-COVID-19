@@ -88,7 +88,7 @@
           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqEEJqD-6CS1FMneeEsgVRViLE8i0Tmgw&callback=initMap&libraries=drawing&pb=!1m18!1m12!1m3!1d7933.03325458806!2d106.7975101741862!3d-6.19535793205976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6965c21cf89%3A0xb4e9aae2a244be30!2sSlipi%2C+Palmerah%2C+West+Jakarta+City%2C+Jakarta!5e0!3m2!1sen!2sid!4v1560134937615!5m2!1sen!2sid"></script>
           <div class="rounded" id="peta" style="width: 100%; height: 400px;"></div>
           <?php include "module/wilayah-jakarta.php"; ?>
-          * Refresh halaman kembali jika peta tidak muncul
+          * Dibutuhkan 2 menit untuk menampilkan infografis pada peta setelah munculnya peta. Refresh halaman kembali jika peta tidak muncul
 
         </div>
       </div>
