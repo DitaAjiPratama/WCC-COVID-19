@@ -8,12 +8,13 @@
   "features":[
 
     <?php $i = 0; ?>
-    
+
     <?php
       $sql = "SELECT *
         FROM provinsi
         WHERE polygon != ''
         AND nama != 'Jakarta'
+        AND nama != 'Banten'
       ";
       $result = $con->query($sql);
       while ($row = $result->fetch_assoc()) { $i++; if ($i>1) echo ",";
