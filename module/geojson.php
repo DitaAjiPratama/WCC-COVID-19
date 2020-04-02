@@ -17,7 +17,8 @@
         AND nama != 'Banten'
       ";
       $result = $con->query($sql);
-      while ($row = $result->fetch_assoc()) { $i++; if ($i>1) echo ",";
+      // while ($row = $result->fetch_assoc()) { $i++; if ($i>1) echo ",";
+      while (false) {
     ?>
     {
       "type":"Feature",
